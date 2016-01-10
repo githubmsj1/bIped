@@ -1,0 +1,67 @@
+atlas:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+  
+  # Position Controllers ---------------------------------------
+  l_leg_uhz_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: l_leg_uhz
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+  l_leg_mhx_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: l_leg_mhx
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+  l_leg_lhy_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: l_leg_lhy
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+  l_leg_kny_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: l_leg_kny
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+  l_leg_uay_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: l_leg_uay
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+  l_leg_lax_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: l_leg_lax
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+
+  r_leg_uhz_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: r_leg_uhz
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+  r_leg_mhx_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: r_leg_mhx
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+  r_leg_lhy_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: r_leg_lhy
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+  r_leg_kny_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: r_leg_kny
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+  r_leg_uay_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: r_leg_uay
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+  r_leg_lax_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: r_leg_lax
+    pid: {p: 100.0, i: 0.01, d: 10.0}

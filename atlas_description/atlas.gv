@@ -1,0 +1,41 @@
+digraph G {
+node [shape=box];
+"pelvis" [label="pelvis"];
+"l_uglut" [label="l_uglut"];
+"l_lglut" [label="l_lglut"];
+"l_uleg" [label="l_uleg"];
+"l_lleg" [label="l_lleg"];
+"l_talus" [label="l_talus"];
+"l_foot" [label="l_foot"];
+"r_uglut" [label="r_uglut"];
+"r_lglut" [label="r_lglut"];
+"r_uleg" [label="r_uleg"];
+"r_lleg" [label="r_lleg"];
+"r_talus" [label="r_talus"];
+"r_foot" [label="r_foot"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"pelvis" -> "l_leg_uhz" [label="xyz: 0 0.089 0 \nrpy: 0 -0 0"]
+"l_leg_uhz" -> "l_uglut"
+"l_uglut" -> "l_leg_mhx" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"l_leg_mhx" -> "l_lglut"
+"l_lglut" -> "l_leg_lhy" [label="xyz: 0.05 0 -0.05 \nrpy: 0 -0 0"]
+"l_leg_lhy" -> "l_uleg"
+"l_uleg" -> "l_leg_kny" [label="xyz: -0.05 0 -0.374 \nrpy: 0 -0 0"]
+"l_leg_kny" -> "l_lleg"
+"l_lleg" -> "l_leg_uay" [label="xyz: 0 0 -0.422 \nrpy: 0 -0 0"]
+"l_leg_uay" -> "l_talus"
+"l_talus" -> "l_leg_lax" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"l_leg_lax" -> "l_foot"
+"pelvis" -> "r_leg_uhz" [label="xyz: 0 -0.089 0 \nrpy: 0 -0 0"]
+"r_leg_uhz" -> "r_uglut"
+"r_uglut" -> "r_leg_mhx" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"r_leg_mhx" -> "r_lglut"
+"r_lglut" -> "r_leg_lhy" [label="xyz: 0.05 0 -0.05 \nrpy: 0 -0 0"]
+"r_leg_lhy" -> "r_uleg"
+"r_uleg" -> "r_leg_kny" [label="xyz: -0.05 0 -0.374 \nrpy: 0 -0 0"]
+"r_leg_kny" -> "r_lleg"
+"r_lleg" -> "r_leg_uay" [label="xyz: 0 0 -0.422 \nrpy: 0 -0 0"]
+"r_leg_uay" -> "r_talus"
+"r_talus" -> "r_leg_lax" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"r_leg_lax" -> "r_foot"
+}

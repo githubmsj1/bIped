@@ -1,0 +1,27 @@
+
+<launch>
+
+
+
+  <!-- Robot Description -->
+  <param name="robot_description" textfile="/root/mys/src/drcsim/atlas_description/robots/biped.xml"/>
+
+  <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+        args="-urdf -z 0.93 -model atlas -param robot_description" />
+
+  <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+  <!--<node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+        args="-urdf -z 0.93 -model atlas -file /root/mys/src/drcsim/atlas_description/robots/biped.xml" />-->
+
+
+
+
+  <!-- joint states to tf -->
+  <!--<node pkg="robot_state_publisher" type="state_publisher" name="atlas_robot_state_publisher">
+    <param name="publish_frequency" type="double" value="50.0" />
+    <remap from="joint_states" to="/atlas/joint_states" />
+  </node>-->
+
+
+</launch>
